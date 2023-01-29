@@ -1,0 +1,49 @@
+.main-home {
+    .home-stations {
+        .clr-container {
+            background-image: linear-gradient(rgba(0, 0, 0, .6) 0, $bgc-main 100%);
+        }
+
+        >*:not(.clr-container) {
+            padding: 0 $main-app-padding;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 30px 0;
+        }
+    }
+    @media (max-width: $mobile-size) {
+        .home-stations > *:not(.clr-container) {
+            padding: 0 $main-mobile-padding;
+        }
+    }
+}
+
+.title-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        font-size: .9em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        opacity: .7;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
